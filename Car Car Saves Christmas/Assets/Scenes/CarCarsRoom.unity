@@ -375,6 +375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transport
       objectReference: {fileID: 0}
+    - target: {fileID: 2744742990414701193, guid: 36b3ccd56443d7448a8eb1e9eb8a2d74, type: 3}
+      propertyPath: scene
+      value: DansHouse
+      objectReference: {fileID: 0}
     - target: {fileID: 6636850445542640060, guid: 36b3ccd56443d7448a8eb1e9eb8a2d74, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.55
