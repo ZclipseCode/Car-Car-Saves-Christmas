@@ -18,21 +18,24 @@ public class Clickable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (collectible)
+        if (PointAndClickController.instance.canClick)
 		{
-			PointAndClickController.AddItem(item);
-			Destroy(gameObject);
-		}
-		
-		if (animator != null)
-		{
-			PlayAnimation();
-		}
+            if (collectible)
+            {
+                PointAndClickController.AddItem(item);
+                Destroy(gameObject);
+            }
 
-		if (clip != null)
-		{
-			PlayAudioClip();
-		}
+            if (animator != null)
+            {
+                PlayAnimation();
+            }
+
+            if (clip != null)
+            {
+                PlayAudioClip();
+            }
+        }
     }
 
     public void CollectItem()

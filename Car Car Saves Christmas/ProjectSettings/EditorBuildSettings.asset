@@ -6,8 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Alley.unity
+    guid: e8d6da5494a1a40448753f4296254ff7
+  - enabled: 1
+    path: Assets/Scenes/CarCarsRoom.unity
+    guid: af001dde42e6c864bae6138924fdc816
+  - enabled: 1
+    path: Assets/Scenes/Carville.unity
+    guid: 720ab585be7356344ac778a854ed7236
+  - enabled: 1
+    path: Assets/Scenes/CarvilleOutskirts.unity
+    guid: 00e6cd5f7e790f141a437c0b3438a9e1
+  - enabled: 1
+    path: Assets/Scenes/DansHouse.unity
+    guid: 2d9f98deae3d625488fad43188c4be68
+  - enabled: 1
+    path: Assets/Scenes/EvesHouse.unity
+    guid: 37a1d83e5454e0c4e96d4eaaa245ccde
+  - enabled: 1
+    path: Assets/Scenes/PetKart.unity
+    guid: edfc483b7911afe4a9c5f9bb6f2c6306
+  - enabled: 1
+    path: Assets/Scenes/PitStop.unity
+    guid: 0025ef93a5ddfd047a8d26afb2a188e0
+  - enabled: 1
+    path: Assets/Scenes/WillsWheels.unity
+    guid: caa563b489bb9f342a817e7e2e09a1fb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
