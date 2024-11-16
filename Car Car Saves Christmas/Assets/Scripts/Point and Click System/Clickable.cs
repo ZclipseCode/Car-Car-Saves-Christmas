@@ -3,6 +3,7 @@ using UnityEngine;
 public class Clickable : MonoBehaviour
 {
 	[SerializeField] string itemName;
+    [SerializeField] GameObject itemUIPrefab;
     [SerializeField] AudioClip clip;
 	[SerializeField] bool collectible;
     Animator animator;
@@ -12,17 +13,16 @@ public class Clickable : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-		item = new Item(itemName, spriteRenderer.sprite);
+		item = new Item(itemName, itemUIPrefab);
     }
 
     private void OnMouseDown()
     {
-        if (PointAndClickController.instance.canClick)
+        if (PointAndClickController.instance.canClick && PointAndClickController.heldItem == null)
 		{
             if (collectible)
             {
-                PointAndClickController.AddItem(item);
+                PointAndClickController.OnAddItem?.Invoke(item);
                 Destroy(gameObject);
             }
 
@@ -37,11 +37,6 @@ public class Clickable : MonoBehaviour
             }
         }
     }
-
-    public void CollectItem()
-	{
-		PointAndClickController.AddItem(item);
-	}
 
 	public void PlayAudioClip()
 	{
