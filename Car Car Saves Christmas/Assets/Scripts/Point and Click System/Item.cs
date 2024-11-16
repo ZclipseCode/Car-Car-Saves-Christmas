@@ -3,11 +3,11 @@ using UnityEngine;
 public class Item
 {
     public string itemName;
-    public Sprite sprite;
+    public GameObject itemUIPrefab;
 
-    public Item(string itemName, Sprite sprite)
+    public Item(string itemName, GameObject itemPrefab)
     {
         this.itemName = itemName;
-        this.sprite = sprite;
+        this.itemUIPrefab = itemPrefab;
     }
 }

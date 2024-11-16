@@ -9,6 +9,10 @@ public class PointAndClickController : MonoBehaviour
     AudioSource audioSource;
     public bool canClick = true;
 
+    public delegate void ItemHandler(Item item);
+    public static ItemHandler OnAddItem;
+    public static ItemHandler OnRemoveItem;
+
     private void Awake()
     {
         if (instance == null)
@@ -20,26 +24,30 @@ public class PointAndClickController : MonoBehaviour
             Destroy(gameObject);
         }
 
+        OnAddItem += AddItem;
+        OnRemoveItem += RemoveItem;
+
         audioSource = GetComponent<AudioSource>();
     }
 
-    public static void LoadScene(string scene)
+    public void AddItem(Item item)
     {
-        SceneManager.LoadScene(scene);
+        items.Add(item);
     }
 
-    public static void AddItem(Item item)
+    public void RemoveItem(Item item)
     {
-        instance.items.Add(item);
-    }
-
-    public static void RemoveItem(Item item)
-    {
-        instance.items.Remove(item);
+        items.Remove(item);
     }
 
     public static void PlayAudioClip(AudioClip clip)
     {
         instance.audioSource.PlayOneShot(clip);
+    }
+
+    private void OnDestroy()
+    {
+        OnAddItem -= AddItem;
+        OnRemoveItem -= RemoveItem;
     }
 }
