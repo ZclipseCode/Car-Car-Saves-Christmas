@@ -10,6 +10,7 @@ public class InventoryBar : MonoBehaviour
     private void Awake()
     {
         PointAndClickController.OnAddItem += AddItem;
+        PointAndClickController.OnRemoveItem += RemoveItem;
     }
 
     void AddItem(Item item)
@@ -24,9 +25,17 @@ public class InventoryBar : MonoBehaviour
 
     void RemoveItem(Item item)
     {
-        int removeIndex = items.IndexOf(item);
-        items.Remove(item);
-        itemTransforms.RemoveAt(removeIndex);
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].itemName == item.itemName)
+            {
+                items.RemoveAt(i);
+                Destroy(itemTransforms[i].gameObject);
+                itemTransforms.RemoveAt(i);
+
+                break;
+            }
+        }
 
         ArrangeItems();
     }
@@ -56,6 +65,7 @@ public class InventoryBar : MonoBehaviour
 
     private void OnDestroy()
     {
+        PointAndClickController.OnAddItem -= AddItem;
         PointAndClickController.OnRemoveItem -= RemoveItem;
     }
 }
