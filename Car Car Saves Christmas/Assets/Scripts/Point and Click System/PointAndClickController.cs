@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PointAndClickController : MonoBehaviour
 {
@@ -8,6 +7,7 @@ public class PointAndClickController : MonoBehaviour
     List<Item> items = new List<Item>();
     AudioSource audioSource;
     public bool canClick = true;
+    public static Item heldItem;
 
     public delegate void ItemHandler(Item item);
     public static ItemHandler OnAddItem;

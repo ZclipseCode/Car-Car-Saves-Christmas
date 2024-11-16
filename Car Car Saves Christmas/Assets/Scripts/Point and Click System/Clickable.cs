@@ -18,7 +18,7 @@ public class Clickable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (PointAndClickController.instance.canClick)
+        if (PointAndClickController.instance.canClick && PointAndClickController.heldItem == null)
 		{
             if (collectible)
             {

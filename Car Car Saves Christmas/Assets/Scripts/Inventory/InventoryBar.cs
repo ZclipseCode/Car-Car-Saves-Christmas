@@ -24,7 +24,11 @@ public class InventoryBar : MonoBehaviour
 
     void RemoveItem(Item item)
     {
+        int removeIndex = items.IndexOf(item);
+        items.Remove(item);
+        itemTransforms.RemoveAt(removeIndex);
 
+        ArrangeItems();
     }
 
     void ArrangeItems()
