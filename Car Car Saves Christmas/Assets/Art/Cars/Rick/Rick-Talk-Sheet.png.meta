@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 18872ce3c233b90469f8c087f59213c4
+guid: b3303a34764396b4cbeb6021848cc8f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6518800160416577102
-    second: CarCar-Idle_0
+      213: 4895046763853568913
+    second: Rick-Talk-Sheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,12 +139,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CarCar-Idle_0
+      name: Rick-Talk-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 126
+        width: 252
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,30 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b94c9ccac19885a0800000000000000
-      internalID: -6518800160416577102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarCar-Idle_1
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 0
-        width: 126
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ace9ea867bb915c42b014e3d3b0ada16
-      internalID: 1709939284
+      spriteID: 19bda6eb813bee340800000000000000
+      internalID: 4895046763853568913
       vertices: []
       indices: 
       edges: []
@@ -186,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: feaa51ecfe294924a86b3d0c797bd42e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -196,8 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CarCar-Idle_0: -6518800160416577102
-      CarCar-Idle_1: 1709939284
+      Rick-Talk-Sheet_0: 4895046763853568913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
