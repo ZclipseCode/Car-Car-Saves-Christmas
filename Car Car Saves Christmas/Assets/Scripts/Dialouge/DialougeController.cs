@@ -69,7 +69,7 @@ public class DialougeController : MonoBehaviour
         
         foreach (Item item in PointAndClickController.items)
         {
-            if (!PointAndClickController.anotherVisitedItems.Contains(item))
+            if (!PointAndClickController.anotherVisitedItems.Contains(item) && item.itemName == anotherVisitTargetItem)
             {
                 PointAndClickController.anotherVisitedItems.Add(item);
             }
