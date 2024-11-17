@@ -7,11 +7,12 @@ public class PointAndClickController : MonoBehaviour
     List<Item> items = new List<Item>();
     AudioSource audioSource;
     public bool canClick = true;
-    public static Item heldItem;
 
     public delegate void ItemHandler(Item item);
     public static ItemHandler OnAddItem;
     public static ItemHandler OnRemoveItem;
+
+    public List<string> visitedScenes = new List<string>();
 
     private void Awake()
     {
@@ -43,6 +44,14 @@ public class PointAndClickController : MonoBehaviour
     public static void PlayAudioClip(AudioClip clip)
     {
         instance.audioSource.PlayOneShot(clip);
+    }
+
+    public static void VisitedScene(string scene)
+    {
+        if (!instance.visitedScenes.Contains(scene))
+        {
+            instance.visitedScenes.Add(scene);
+        }
     }
 
     private void OnDestroy()

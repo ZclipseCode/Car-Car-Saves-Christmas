@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Clickable : MonoBehaviour
@@ -13,17 +14,16 @@ public class Clickable : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-		item = new Item(itemName, itemUIPrefab);
+		item = new Item(itemName, itemUIPrefab, clip);
     }
 
     private void OnMouseDown()
     {
-        if (PointAndClickController.instance.canClick && PointAndClickController.heldItem == null)
+        if (PointAndClickController.instance.canClick)
 		{
             if (collectible)
             {
-                PointAndClickController.OnAddItem?.Invoke(item);
-                Destroy(gameObject);
+                StartCoroutine(CollectItem());
             }
 
             if (animator != null)
@@ -47,4 +47,20 @@ public class Clickable : MonoBehaviour
 	{
 		animator.SetTrigger("isAnimating");
 	}
+
+    IEnumerator CollectItem()
+    {
+        PointAndClickController.instance.canClick = false;
+
+        PointAndClickController.OnAddItem?.Invoke(item);
+
+        Destroy(gameObject);
+
+        if (clip != null)
+        {
+            yield return new WaitForSeconds(clip.length);
+        }
+
+        PointAndClickController.instance.canClick = true;
+    }
 }

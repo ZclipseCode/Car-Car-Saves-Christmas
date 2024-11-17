@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WillsWheels.unity
     guid: caa563b489bb9f342a817e7e2e09a1fb
+  - enabled: 1
+    path: Assets/Scenes/Test/PointAndClickTest.unity
+    guid: 591ef1c5825bbc74cbf97ed722a10785
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
