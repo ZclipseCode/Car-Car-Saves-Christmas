@@ -388,7 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Wish List
   itemUIPrefab: {fileID: 8576070886489417106, guid: 9e3c24c62d3b0284497064cf889071f8, type: 3}
-  clip: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
+  clip: {fileID: 0}
   collectible: 1
   goalItem: 
   reciever: 0
@@ -624,16 +624,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 84099802e5abf724eb60233a1f70c098, type: 3}
+      objectReference: {fileID: 8300000, guid: ed8e424aadb1afa4d88e51daf5f6bb9a, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
+      objectReference: {fileID: 8300000, guid: a7685c3391749ee47a65b8ad3f38eeeb, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[2].clip
       value: 
@@ -671,6 +671,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3714650784275347068, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e7f9867d1bcddad4a85932fd279f04eb, type: 3}
     - target: {fileID: 4121980781036030004, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
       propertyPath: m_Name
       value: Car Car
