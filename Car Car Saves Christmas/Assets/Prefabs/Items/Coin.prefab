@@ -149,7 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Coin
   itemUIPrefab: {fileID: 2120911012902953689, guid: 07534328e826fe244a4e6fcba2f8493e, type: 3}
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 2feff9b7d4bfc2c488f2492b28524ee8, type: 3}
   collectible: 1
   goalItem: 
   reciever: 0
+  cantCollectSfx: {fileID: 0}
