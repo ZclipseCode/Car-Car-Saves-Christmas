@@ -9,6 +9,7 @@ public class Clickable : MonoBehaviour
 	[SerializeField] bool collectible;
     [SerializeField] string goalItem;
     [SerializeField] bool reciever;
+    [SerializeField] AudioClip cantCollectSfx;
     Animator animator;
 	Item item;
 
@@ -23,11 +24,11 @@ public class Clickable : MonoBehaviour
     {
         if (PointAndClickController.instance.canClick)
 		{
-            if (collectible)
+            if (collectible && !reciever)
             {
-                StartCoroutine(CollectItem());
+                CollectItem();
             }
-            else if (reciever)
+            else if (collectible && reciever)
             {
                 for (int i = 0; i < PointAndClickController.items.Count; i++)
                 {
@@ -36,6 +37,9 @@ public class Clickable : MonoBehaviour
                     if (iteratedItem.itemName == goalItem)
                     {
                         PointAndClickController.OnRemoveItem(PointAndClickController.items[i]);
+                        CollectItem();
+                        PointAndClickController.PlayAudioClip(clip);
+                        return;
                     }
                 }
             }
@@ -45,9 +49,13 @@ public class Clickable : MonoBehaviour
                 PlayAnimation();
             }
 
-            if (clip != null)
+            if (clip != null && !reciever)
             {
                 PlayAudioClip();
+            }
+            else if (reciever)
+            {
+                PointAndClickController.PlayAudioClip(cantCollectSfx);
             }
         }
     }
@@ -62,19 +70,19 @@ public class Clickable : MonoBehaviour
 		animator.SetTrigger("isAnimating");
 	}
 
-    IEnumerator CollectItem()
+    void CollectItem()
     {
         PointAndClickController.instance.canClick = false;
 
         PointAndClickController.OnAddItem?.Invoke(item);
 
-        Destroy(gameObject);
-
         if (clip != null)
         {
-            yield return new WaitForSeconds(clip.length);
+            PointAndClickController.PlayAudioClip(clip);
         }
 
         PointAndClickController.instance.canClick = true;
+
+        Destroy(gameObject);
     }
 }
