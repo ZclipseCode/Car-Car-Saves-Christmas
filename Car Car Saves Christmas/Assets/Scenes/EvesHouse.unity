@@ -452,11 +452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7226047841051521104, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -4.39
       objectReference: {fileID: 0}
     - target: {fileID: 7226047841051521104, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.61
       objectReference: {fileID: 0}
     - target: {fileID: 7226047841051521104, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
       propertyPath: m_LocalPosition.z
@@ -499,6 +499,76 @@ PrefabInstance:
 Animator:
   m_CorrespondingSourceObject: {fileID: 2673680400579079915, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
   m_PrefabInstance: {fileID: 985258283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1771418136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302731566401625249, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 726254270677379011, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 726254270677379011, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799189815869498661, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_Name
+      value: Electric Eve
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b72c173071291964681662c9000bcce2, type: 3}
+--- !u!95 &1771418137 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6113767357341415082, guid: b72c173071291964681662c9000bcce2, type: 3}
+  m_PrefabInstance: {fileID: 1771418136}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2109221301
 PrefabInstance:
@@ -554,24 +624,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: ed8e424aadb1afa4d88e51daf5f6bb9a, type: 3}
+      objectReference: {fileID: 8300000, guid: ed22d83cad946fa419b944055d5a7ab9, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a7685c3391749ee47a65b8ad3f38eeeb, type: 3}
+      objectReference: {fileID: 8300000, guid: 333f37e9fd7afbf43a5735014e88077e, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
+      objectReference: {fileID: 8300000, guid: cfde35f092c55834580e4297636b051f, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
+      objectReference: {fileID: 8300000, guid: 0d2e42a2ae90a564d9f1df9a7b7b2942, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].animator
       value: 
@@ -579,7 +649,7 @@ PrefabInstance:
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].animator
       value: 
-      objectReference: {fileID: 985258284}
+      objectReference: {fileID: 1771418137}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[2].animator
       value: 
@@ -587,7 +657,7 @@ PrefabInstance:
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[3].animator
       value: 
-      objectReference: {fileID: 985258284}
+      objectReference: {fileID: 1771418137}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -731,3 +801,4 @@ SceneRoots:
   - {fileID: 2109221301}
   - {fileID: 985258283}
   - {fileID: 897983629}
+  - {fileID: 1771418136}

@@ -13,6 +13,7 @@ public class PointAndClickController : MonoBehaviour
     public static ItemHandler OnRemoveItem;
 
     public static List<string> visitedScenes = new List<string>();
+    public static List<string> anotherVisitedScenes = new List<string>();
 
     private void Awake()
     {
