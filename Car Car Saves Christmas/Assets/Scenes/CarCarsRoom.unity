@@ -390,6 +390,8 @@ MonoBehaviour:
   itemUIPrefab: {fileID: 8576070886489417106, guid: 9e3c24c62d3b0284497064cf889071f8, type: 3}
   clip: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
   collectible: 1
+  goalItem: 
+  reciever: 0
 --- !u!61 &834943135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -627,7 +629,7 @@ PrefabInstance:
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 3e1693900d7b3cd43bce3e4856c2fdb5, type: 3}
+      objectReference: {fileID: 8300000, guid: 84099802e5abf724eb60233a1f70c098, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].clip
       value: 
