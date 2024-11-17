@@ -4,7 +4,7 @@ using UnityEngine;
 public class PointAndClickController : MonoBehaviour
 {
     public static PointAndClickController instance;
-    List<Item> items = new List<Item>();
+    public List<Item> items = new List<Item>();
     AudioSource audioSource;
     public bool canClick = true;
 

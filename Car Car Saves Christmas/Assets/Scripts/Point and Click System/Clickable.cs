@@ -7,6 +7,8 @@ public class Clickable : MonoBehaviour
     [SerializeField] GameObject itemUIPrefab;
     [SerializeField] AudioClip clip;
 	[SerializeField] bool collectible;
+    [SerializeField] string goalItem;
+    [SerializeField] bool reciever;
     Animator animator;
 	Item item;
 
@@ -24,6 +26,18 @@ public class Clickable : MonoBehaviour
             if (collectible)
             {
                 StartCoroutine(CollectItem());
+            }
+            else if (reciever)
+            {
+                for (int i = 0; i < PointAndClickController.instance.items.Count; i++)
+                {
+                    Item iteratedItem = PointAndClickController.instance.items[i];
+
+                    if (iteratedItem.itemName == goalItem)
+                    {
+                        PointAndClickController.OnRemoveItem(PointAndClickController.instance.items[i]);
+                    }
+                }
             }
 
             if (animator != null)
