@@ -14,6 +14,7 @@ public class PointAndClickController : MonoBehaviour
 
     public static List<string> visitedScenes = new List<string>();
     public static List<string> anotherVisitedScenes = new List<string>();
+    public static List<Item> anotherVisitedItems = new List<Item>();
 
     private void Awake()
     {

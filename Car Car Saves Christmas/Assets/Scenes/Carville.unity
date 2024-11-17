@@ -750,8 +750,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitTargetItem
+      value: BoneCrusher24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.size
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].clip
@@ -770,6 +778,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7bc0d81dbef5c7c479d339d1902371d3, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c1f7ff673049e1f4da67f8c3c385e326, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b45ea00c29b8b742bd08735588beecd, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 657fae3ba949bb846a86b3a94f87b3c5, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e5eb1b384330e044a93ecb2b3e5d5504, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 48435612d10821c45bdb3f7147766231, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].animator
       value: 
       objectReference: {fileID: 1472897342}
@@ -785,6 +817,30 @@ PrefabInstance:
       propertyPath: firstEntryVoicelines.Array.data[3].animator
       value: 
       objectReference: {fileID: 1472897342}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[0].animator
+      value: 
+      objectReference: {fileID: 1472897342}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[1].animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[2].animator
+      value: 
+      objectReference: {fileID: 1472897342}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[3].animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[4].animator
+      value: 
+      objectReference: {fileID: 1472897342}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: anotherVisitVoicelines.Array.data[5].animator
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
