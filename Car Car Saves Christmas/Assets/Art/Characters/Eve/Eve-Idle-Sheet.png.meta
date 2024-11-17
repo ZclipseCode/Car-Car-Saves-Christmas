@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 252
+        width: 126
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Eve-Idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 126
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949e354d708fc9341966bfc5ff5d3b75
+      internalID: 746090272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b4a2977f02e01ea45934154a0e462e8b
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Eve-Idle-Sheet_0: -3347835247413292958
+      Eve-Idle-Sheet_1: 746090272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 252
+        width: 126
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Dan-Idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 126
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d0948fdb418364b8c30ed049ceb15c
+      internalID: 1345071955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5b5bfcda770e8984984bb51b7bfd4949
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Dan-Idle-Sheet_0: 238601754596001436
+      Dan-Idle-Sheet_1: 1345071955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

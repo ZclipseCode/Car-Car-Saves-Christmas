@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 252
+        width: 126
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Rick-Talk-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 126
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121bc245f0a6b9e4fbd9e73605f61256
+      internalID: -64108143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7077be77ddf8fe749b27b9cf619d3eb0
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Rick-Talk-Sheet_0: 4895046763853568913
+      Rick-Talk-Sheet_1: -64108143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

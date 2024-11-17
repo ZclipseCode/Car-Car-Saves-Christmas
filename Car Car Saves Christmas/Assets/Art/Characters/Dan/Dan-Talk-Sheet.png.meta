@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 252
+        width: 126
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Dan-Talk-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 126
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a441bde17581e642af3502f46701bcd
+      internalID: -825692713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 243e7e0e7f3e51142a40086c72a1a163
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Dan-Talk-Sheet_0: -2234679222979393546
+      Dan-Talk-Sheet_1: -825692713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
