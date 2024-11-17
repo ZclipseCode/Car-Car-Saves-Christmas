@@ -624,12 +624,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: ed8e424aadb1afa4d88e51daf5f6bb9a, type: 3}
+      objectReference: {fileID: 8300000, guid: 98d927d3186e77442945322c4930c6fd, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].clip
       value: 

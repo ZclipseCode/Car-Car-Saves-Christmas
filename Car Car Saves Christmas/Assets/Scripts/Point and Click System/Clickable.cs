@@ -29,13 +29,13 @@ public class Clickable : MonoBehaviour
             }
             else if (reciever)
             {
-                for (int i = 0; i < PointAndClickController.instance.items.Count; i++)
+                for (int i = 0; i < PointAndClickController.items.Count; i++)
                 {
-                    Item iteratedItem = PointAndClickController.instance.items[i];
+                    Item iteratedItem = PointAndClickController.items[i];
 
                     if (iteratedItem.itemName == goalItem)
                     {
-                        PointAndClickController.OnRemoveItem(PointAndClickController.instance.items[i]);
+                        PointAndClickController.OnRemoveItem(PointAndClickController.items[i]);
                     }
                 }
             }

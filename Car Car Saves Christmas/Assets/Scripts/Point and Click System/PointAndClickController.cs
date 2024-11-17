@@ -4,7 +4,7 @@ using UnityEngine;
 public class PointAndClickController : MonoBehaviour
 {
     public static PointAndClickController instance;
-    public List<Item> items = new List<Item>();
+    public static List<Item> items = new List<Item>();
     AudioSource audioSource;
     public bool canClick = true;
 
@@ -12,7 +12,7 @@ public class PointAndClickController : MonoBehaviour
     public static ItemHandler OnAddItem;
     public static ItemHandler OnRemoveItem;
 
-    public List<string> visitedScenes = new List<string>();
+    public static List<string> visitedScenes = new List<string>();
 
     private void Awake()
     {
@@ -48,9 +48,9 @@ public class PointAndClickController : MonoBehaviour
 
     public static void VisitedScene(string scene)
     {
-        if (!instance.visitedScenes.Contains(scene))
+        if (!visitedScenes.Contains(scene))
         {
-            instance.visitedScenes.Add(scene);
+            visitedScenes.Add(scene);
         }
     }
 

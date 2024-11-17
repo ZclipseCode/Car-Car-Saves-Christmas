@@ -9,7 +9,7 @@ public class DialougeController : MonoBehaviour
 
     private void Start()
     {
-        if (!PointAndClickController.instance.visitedScenes.Contains(SceneManager.GetActiveScene().name))
+        if (!PointAndClickController.visitedScenes.Contains(SceneManager.GetActiveScene().name))
         {
             PointAndClickController.instance.canClick = false;
             StartCoroutine(FirstEntry());
@@ -18,6 +18,8 @@ public class DialougeController : MonoBehaviour
 
     IEnumerator FirstEntry()
     {
+        PointAndClickController.visitedScenes.Add(SceneManager.GetActiveScene().name);
+
         foreach (Voiceline voiceline in firstEntryVoicelines)
         {
             PointAndClickController.PlayAudioClip(voiceline.clip);
