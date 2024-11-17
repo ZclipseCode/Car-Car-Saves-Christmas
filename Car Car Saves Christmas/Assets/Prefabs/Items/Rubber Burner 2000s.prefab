@@ -149,7 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Rubber Burner 2000s
   itemUIPrefab: {fileID: 470525791365298606, guid: f31ed498f93c12f48bcacb72daef6c3a, type: 3}
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 8724f7b1764d55644bf4d40fff31236c, type: 3}
   collectible: 1
-  goalItem: 
-  reciever: 0
+  goalItem: Coin
+  reciever: 1
+  cantCollectSfx: {fileID: 8300000, guid: 83003c3d8f25ba54484eab3ef9cb61c9, type: 3}
