@@ -6,9 +6,21 @@ public class InventoryBar : MonoBehaviour
     [SerializeField] RectTransform panel;
     List<Item> items = new List<Item>();
     List<RectTransform> itemTransforms = new List<RectTransform>();
+    [SerializeField] GameObject container;
+    public static GameObject containerInstance;
 
     private void Awake()
     {
+        if (containerInstance == null)
+        {
+            containerInstance = container;
+            DontDestroyOnLoad(containerInstance);
+        }
+        else
+        {
+            Destroy(container);
+        }
+
         PointAndClickController.OnAddItem += AddItem;
         PointAndClickController.OnRemoveItem += RemoveItem;
     }
