@@ -347,46 +347,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 393afe7a277561b4eba844d82390486a, type: 3}
+      objectReference: {fileID: 8300000, guid: 6a6f2d5cbf055374db49ba947aa9058d, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: c013b8da3e7fbe24b9b3fe6f5e3d84c3, type: 3}
+      objectReference: {fileID: 8300000, guid: 393afe7a277561b4eba844d82390486a, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9c237fc4edb344f468ff0faef79dbb45, type: 3}
+      objectReference: {fileID: 8300000, guid: c013b8da3e7fbe24b9b3fe6f5e3d84c3, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 268455fd0dfc22d4ebd432cadd03dee6, type: 3}
+      objectReference: {fileID: 8300000, guid: 9c237fc4edb344f468ff0faef79dbb45, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 268455fd0dfc22d4ebd432cadd03dee6, type: 3}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: firstEntryVoicelines.Array.data[5].clip
       value: 
       objectReference: {fileID: 8300000, guid: 92caf19ce69e4724fb7a935ae0c21c15, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].animator
       value: 
-      objectReference: {fileID: 981033836}
+      objectReference: {fileID: 0}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[1].animator
       value: 
-      objectReference: {fileID: 1014462965}
+      objectReference: {fileID: 981033836}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[2].animator
       value: 
-      objectReference: {fileID: 981033836}
+      objectReference: {fileID: 1014462965}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[3].animator
       value: 
-      objectReference: {fileID: 1014462965}
+      objectReference: {fileID: 981033836}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[4].animator
+      value: 
+      objectReference: {fileID: 1014462965}
+    - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
+      propertyPath: firstEntryVoicelines.Array.data[5].animator
       value: 
       objectReference: {fileID: 981033836}
     m_RemovedComponents: []

@@ -608,6 +608,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 726254270677379011, guid: b72c173071291964681662c9000bcce2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3799189815869498661, guid: b72c173071291964681662c9000bcce2, type: 3}
       propertyPath: m_Name
       value: Electric Eve

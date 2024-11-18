@@ -359,10 +359,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Brian \u201CZclipse\u201D Michael: Programmer, Story Writer, Voices BoneCrusher24\r\n\n\n\nGavin
     Anderson: Script Writer\r\n\n\n\nChloe Amann: Voices Electric Eve\r\n\n\n\nIan
-    Cooper: Voices Car Car, \u201CCar Car\u201D Credits Song, Script Writer\r\n\n\n\nCameron
-    Schrader: Environmental Artist\r\n\n\n\nKevin King: Voices Diesel Dan\r\n\n\n\nElijah
-    Winchel: Voices Piston Pete\r\n\n\n\nDerrick: Voices Hydraulic Hal\r\n\n\n\nCameron
-    Aron: Voices Windshield Will\r\n\n\n\nBrandon W: Voices Radiator Rick\r"
+    Cooper: Voices Car Car, Music, Script Writer\r\n\n\n\nCameron Schrader: Environmental
+    Artist\r\n\n\n\nKevin King: Voices Diesel Dan\r\n\n\n\nElijah Winchel: Voices
+    Piston Pete\r\n\n\n\nDerrick: Voices Hydraulic Hal\r\n\n\n\nCameron Aron: Voices
+    Windshield Will\r\n\n\n\nBrandon W: Voices Radiator Rick\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd3d4fd41a972b34bae66ea03a1c28ad, type: 2}
   m_sharedMaterial: {fileID: 4278983956175856368, guid: dd3d4fd41a972b34bae66ea03a1c28ad, type: 2}
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTime: 8
   credits: {fileID: 459185006}
-  speed: 40
+  speed: 42
 --- !u!4 &1201322722
 Transform:
   m_ObjectHideFlags: 0
@@ -695,8 +695,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 42214490347724145, guid: d7e9b98665ae7d544a423f9be22586ef, type: 3}
+      propertyPath: exit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42214490347724145, guid: d7e9b98665ae7d544a423f9be22586ef, type: 3}
       propertyPath: scene
-      value: Menu
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7867536442397235662, guid: d7e9b98665ae7d544a423f9be22586ef, type: 3}
       propertyPath: m_Name

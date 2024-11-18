@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[17].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 46c61d0a4090c014a9d331ea4b0011d7, type: 3}
+      objectReference: {fileID: 8300000, guid: d4529bbb8cf3f23428c9d25f0c86bc52, type: 3}
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[0].animator
       value: 
@@ -414,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 6354729035068022962, guid: 2ce1fb63c769a7144b93905291200c99, type: 3}
       propertyPath: firstEntryVoicelines.Array.data[17].animator
       value: 
-      objectReference: {fileID: 2059840007}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

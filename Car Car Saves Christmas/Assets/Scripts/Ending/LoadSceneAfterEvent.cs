@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class LoadSceneAfterEvent : MonoBehaviour
 {
     [SerializeField] string scene;
+    [SerializeField] bool exit;
     bool readyToTransition;
 
     private void Start()
@@ -16,7 +17,14 @@ public class LoadSceneAfterEvent : MonoBehaviour
     {
         if (readyToTransition && PointAndClickController.instance.canClick)
         {
-            SceneManager.LoadScene(scene);
+            if (exit)
+            {
+                Application.Quit();
+            }
+            else
+            {
+                SceneManager.LoadScene(scene);
+            }
         }
     }
 

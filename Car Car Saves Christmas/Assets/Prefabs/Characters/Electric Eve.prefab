@@ -130,6 +130,7 @@ MonoBehaviour:
   collectible: 0
   goalItem: 
   reciever: 0
+  cantCollectSfx: {fileID: 0}
 --- !u!61 &3068363187533837329
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -26,4 +26,9 @@ public class Menus : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

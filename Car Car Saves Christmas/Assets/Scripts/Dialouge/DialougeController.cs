@@ -43,28 +43,28 @@ public class DialougeController : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StopAllCoroutines();
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        StopAllCoroutines();
 
-            foreach (Voiceline voiceline in firstEntryVoicelines)
-            {
-                voiceline.animator.SetBool("isTalking", false);
-            }
+    //        foreach (Voiceline voiceline in firstEntryVoicelines)
+    //        {
+    //            voiceline.animator.SetBool("isTalking", false);
+    //        }
 
-            foreach (Voiceline voiceline in anotherVisitVoicelines)
-            {
-                if (voiceline.animator != null)
-                {
-                    voiceline.animator.SetBool("isTalking", false);
-                }
-            }
+    //        foreach (Voiceline voiceline in anotherVisitVoicelines)
+    //        {
+    //            if (voiceline.animator != null)
+    //            {
+    //                voiceline.animator.SetBool("isTalking", false);
+    //            }
+    //        }
 
-            PointAndClickController.instance.canClick = true;
-        }
-    }
+    //        PointAndClickController.instance.canClick = true;
+    //    }
+    //}
 
     IEnumerator FirstEntry()
     {
@@ -76,11 +76,17 @@ public class DialougeController : MonoBehaviour
         {
             PointAndClickController.PlayAudioClip(voiceline.clip);
 
-            voiceline.animator.SetBool("isTalking", true);
+            if (voiceline.animator != null)
+            {
+                voiceline.animator.SetBool("isTalking", true);
+            }
 
             yield return new WaitForSeconds(voiceline.clip.length);
 
-            voiceline.animator.SetBool("isTalking", false);
+            if (voiceline.animator != null)
+            {
+                voiceline.animator.SetBool("isTalking", false);
+            }
         }
 
         PointAndClickController.instance.canClick = true;
