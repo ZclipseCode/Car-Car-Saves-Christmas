@@ -16,7 +16,9 @@ public class DialougeController : MonoBehaviour
         {
             StartCoroutine(FirstEntry());
         }
-        else if (anotherVisitTargetScene != string.Empty && !PointAndClickController.anotherVisitedScenes.Contains(SceneManager.GetActiveScene().name))
+        else if (anotherVisitTargetScene != string.Empty &&
+            PointAndClickController.visitedScenes.Contains(anotherVisitTargetScene) &&
+            !PointAndClickController.anotherVisitedScenes.Contains(anotherVisitTargetScene))
         {
             StartCoroutine(AnotherVisit());
         }
@@ -38,6 +40,29 @@ public class DialougeController : MonoBehaviour
                     return;
                 }
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StopAllCoroutines();
+
+            foreach (Voiceline voiceline in firstEntryVoicelines)
+            {
+                voiceline.animator.SetBool("isTalking", false);
+            }
+
+            foreach (Voiceline voiceline in anotherVisitVoicelines)
+            {
+                if (voiceline.animator != null)
+                {
+                    voiceline.animator.SetBool("isTalking", false);
+                }
+            }
+
+            PointAndClickController.instance.canClick = true;
         }
     }
 
@@ -65,7 +90,10 @@ public class DialougeController : MonoBehaviour
     {
         PointAndClickController.instance.canClick = false;
 
-        PointAndClickController.anotherVisitedScenes.Add(SceneManager.GetActiveScene().name);
+        if (anotherVisitTargetScene != string.Empty)
+        {
+            PointAndClickController.anotherVisitedScenes.Add(anotherVisitTargetScene);
+        }
         
         foreach (Item item in PointAndClickController.items)
         {
@@ -79,16 +107,17 @@ public class DialougeController : MonoBehaviour
         {
             PointAndClickController.PlayAudioClip(voiceline.clip);
 
-            if (voiceline.animator == null)
+            if (voiceline.animator != null)
             {
-                voiceline.animator = GameObject.FindGameObjectWithTag("BoneCrusher24").GetComponent<Animator>();
+                voiceline.animator.SetBool("isTalking", true);
             }
-
-            voiceline.animator.SetBool("isTalking", true);
 
             yield return new WaitForSeconds(voiceline.clip.length);
 
-            voiceline.animator.SetBool("isTalking", false);
+            if (voiceline.animator != null)
+            {
+                voiceline.animator.SetBool("isTalking", false);
+            }
         }
 
         PointAndClickController.instance.canClick = true;

@@ -9,7 +9,7 @@ public class EndingAcess : MonoBehaviour
     [SerializeField] string bothEndingScene;
     [SerializeField] Sprite both;
     [SerializeField] Image message;
-    public static bool endingReady = true;
+    public static bool endingReady;
     int items;
 
     private void OnMouseDown()
@@ -29,8 +29,6 @@ public class EndingAcess : MonoBehaviour
 
     void Prompt()
     {
-        int items = 0;
-
         foreach (Item item in PointAndClickController.items)
         {
             if (item.itemName == "BoneCrusher24" ||
