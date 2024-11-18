@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AlleyCode : MonoBehaviour
@@ -10,6 +11,9 @@ public class AlleyCode : MonoBehaviour
     [SerializeField] GameObject transport;
     public static bool accessed;
     string inputtedCode;
+
+    [SerializeField] List<string> easterEggCodes = new List<string>();
+    [SerializeField] List<AudioClip> easterEggClips = new List<AudioClip>();
 
     private void Start()
     {
@@ -53,13 +57,7 @@ public class AlleyCode : MonoBehaviour
 
         PointAndClickController.instance.canClick = true;
 
-        if (inputtedCode != code)
-        {
-            PointAndClickController.PlayAudioClip(incorrect);
-
-            inputtedCode = string.Empty;
-        }
-        else
+        if (inputtedCode == code)
         {
             PointAndClickController.PlayAudioClip(correct);
 
@@ -67,6 +65,25 @@ public class AlleyCode : MonoBehaviour
             accessed = true;
 
             Destroy(gameObject);
+        }
+        else
+        {
+
+            for (int i = 0;  i < easterEggCodes.Count; i++)
+            {
+                if (inputtedCode == easterEggCodes[i])
+                {
+                    PointAndClickController.PlayAudioClip(easterEggClips[i]);
+
+                    inputtedCode = string.Empty;
+
+                    return;
+                }
+            }
+
+            PointAndClickController.PlayAudioClip(incorrect);
+
+            inputtedCode = string.Empty;
         }
     }
 }

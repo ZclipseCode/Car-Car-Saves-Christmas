@@ -602,6 +602,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d374e648ba465ff40975158cb94fe4e1, type: 3}
+--- !u!1 &1000442111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5742039077422307618, guid: d374e648ba465ff40975158cb94fe4e1, type: 3}
+  m_PrefabInstance: {fileID: 1000442110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1875281546 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2673680400579079915, guid: 544d23ed55ed92743a9e0dda59778469, type: 3}
@@ -835,9 +840,17 @@ PrefabInstance:
       value: Item Scene Controller
       objectReference: {fileID: 0}
     - target: {fileID: 2126765933745394991, guid: f2448e7ed5240f84280053ade18425a4, type: 3}
+      propertyPath: items.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126765933745394991, guid: f2448e7ed5240f84280053ade18425a4, type: 3}
       propertyPath: 'items.Array.data[0]'
       value: 
       objectReference: {fileID: 901702460}
+    - target: {fileID: 2126765933745394991, guid: f2448e7ed5240f84280053ade18425a4, type: 3}
+      propertyPath: 'items.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1000442111}
     - target: {fileID: 8420077564420602007, guid: f2448e7ed5240f84280053ade18425a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

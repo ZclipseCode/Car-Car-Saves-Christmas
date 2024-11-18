@@ -2551,6 +2551,12 @@ MonoBehaviour:
   correct: {fileID: 8300000, guid: ff3734fed7dc7bc4a8fb1a5977157565, type: 3}
   incorrect: {fileID: 8300000, guid: 83003c3d8f25ba54484eab3ef9cb61c9, type: 3}
   transport: {fileID: 680526252}
+  easterEggCodes:
+  - 118
+  - 452
+  easterEggClips:
+  - {fileID: 8300000, guid: 0fb62fa553e9b9b4696b4ed18e9632e3, type: 3}
+  - {fileID: 8300000, guid: 3e1693900d7b3cd43bce3e4856c2fdb5, type: 3}
 --- !u!61 &2053612283
 BoxCollider2D:
   m_ObjectHideFlags: 0
